@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<%= stylesheet_link_tag "my_styles.css" %>
  <head>
  <meta http-equiv="Content-type" content="text/html; charset=utf-8">
  <title>Quips and Quotes :: <%= controller.controller_name.capitalize %></title>
@@ -17,7 +18,7 @@
  <div id="body">
  <%= yield %>
  </div>
- <!-- #footer partial should go here later (but not yet...)# -->
+<%= render partial: 'partials/footer' %>
  </div>
  </body>
 </html>
